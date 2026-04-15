@@ -4,6 +4,7 @@ import { Search, MapPin, ChevronRight, Shield, Zap, Users, Star, ArrowRight, Che
 import { Button } from "@/components/ui/button";
 import { ServiceCard } from "@/components/ServiceCard";
 import { categories, services, locations } from "@/data/services";
+import heroBg from "@/assets/hero-bg.jpg";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -24,11 +25,11 @@ function HomePage() {
 
 function HeroSection() {
   return (
-    <section className="hero-gradient relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary blur-3xl" />
-        <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-coral blur-3xl" />
+    <section className="relative overflow-hidden min-h-[600px]">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img src={heroBg} alt="" className="w-full h-full object-cover" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/80 to-foreground/50" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
