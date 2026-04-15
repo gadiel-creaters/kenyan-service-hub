@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, MessageCircle, ExternalLink } from "lucide-react";
 
 const footerLinks = {
   "For Customers": [
