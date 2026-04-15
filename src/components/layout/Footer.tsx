@@ -41,7 +41,7 @@ export function Footer() {
               Kenya's premier marketplace for discovering and promoting professional services. Connect with trusted vendors instantly.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Instagram, Twitter].map((Icon, i) => (
+              {[Globe, MessageCircle, ExternalLink].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
